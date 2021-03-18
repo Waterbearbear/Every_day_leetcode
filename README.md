@@ -74,13 +74,21 @@ This project is created to record the problem and thought in leetcode.
 
 
 
+### Union Find
+
+#### 200.IslandNumber
+
+fa建完之后就不用再find()一篇做路径压缩了，直接遍历整个fa来find，可以得到根节点的。
+
+用集合来保存遍历到的根节点，不要用pre_num保存上一个遍历到的根节点。因为在fa中可能同一个根节点前后夹着别的根节点，会重复pre_num，令sum++
+
 
 
 ### ToDo List
 
 - [ ] 优先队列 priority queue(to replace MinHeap)
-- [ ] 集合 set
+- [x] 集合 set
 - [ ] 单调栈 
 - [ ] 在问题规模多大时，需要控制时间复杂度
-- [ ] istream
+- [x] istream（利用stoi等函数即可）
 
