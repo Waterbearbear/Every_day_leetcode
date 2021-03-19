@@ -28,8 +28,6 @@ This project is created to record the problem and thought in leetcode.
 
 
 
-
-
 ### Heap
 
 #### 703.KthlargestNumInDataStream
@@ -81,6 +79,14 @@ This project is created to record the problem and thought in leetcode.
 fa建完之后就不用再find()一篇做路径压缩了，直接遍历整个fa来find，可以得到根节点的。
 
 用集合来保存遍历到的根节点，不要用pre_num保存上一个遍历到的根节点。因为在fa中可能同一个根节点前后夹着别的根节点，会重复pre_num，令sum++
+
+
+
+### Search Tree
+
+#### 173.BSTiterator
+
+搜索树有一个特别好的特性就是，中序遍历为有序表，利用这个性质使用栈来进行中序遍历，保存经过的结点。注意：不需要一次遍历完整个，只需要每次next的时候去右子树找最小的左子树即可。
 
 
 
