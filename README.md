@@ -110,6 +110,28 @@ fa建完之后就不用再find()一篇做路径压缩了，直接遍历整个fa�
 
 
 
+## DP
+
+### 139.rob
+
+dp[i] = max(dp[i - 2] + num[i] , dp[i - 1])
+
+
+
+## Search
+
+### 剑指offer 04.二维数组中的查找
+
+个人思路是遍历每一行，行末数字若小于当前target则continue，然后每个行内进行二分查找。
+
+
+
+大佬思路：从右上角开始找，从右上角看就是个二叉搜索树。
+
+
+
+
+
 ## ToDo List
 
 - [x] 优先队列 priority queue(to replace MinHeap)
@@ -120,4 +142,5 @@ fa建完之后就不用再find()一篇做路径压缩了，直接遍历整个fa�
 - [ ] map，C++中的关联容器
 - [ ] & 在for中的用途
 - [ ] emplace_back 和 push_back
+- [ ] std::size_t
 
